@@ -1,2 +1,21 @@
-[![Build Status](https://app.travis-ci.com/kpdvstu/PTLab2.svg?branch=master)](https://app.travis-ci.com/kpdvstu/PTLab2)
 # Лабораторная 2 по дисциплине "Технологии программирования"
+
+## Вариант 6 - Магазин компьютеров
+### Задание
+Покупатель может указать промокод, при введении которого ему
+показываются дополнительные товары. У магазина должно быть
+несколько различных промокодов, каждый из которых влияет на
+доступность определенных товаров.
+
+### Развернуть локально:
+1. Создать файл `.env` в котором указать следующие переменные (здесь описан пример):
+    ```dotenv
+    DATABASE_NAME=django_db
+    DATABASE_USER=postgres
+    DATABASE_PASSWORD=ps_password
+    DATABASE_HOST=localhost
+    DATABASE_PORT=5432
+    ```
+2. Выполнить команду: `docker compose up -d`. Дождаться сборки контейнера.
+3. Чтобы запустить использовать команду: `python manage.py runserver`
+4. Для запуска тестов использовать команду: `python manage.py test`
